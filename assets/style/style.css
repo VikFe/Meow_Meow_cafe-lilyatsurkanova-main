@@ -37,6 +37,7 @@ ul {
   justify-content: space-between;
   padding: 20px;
   background-color: #feb8b8;
+  height: 25vh;
 }
 
 .navbar__links a {
