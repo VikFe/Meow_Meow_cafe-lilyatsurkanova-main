@@ -35,14 +35,16 @@ $tablet: 1149px;
 $mobile: 769px;
 
 /*Стили для header начало*/
+.header {
+  background-color: $pink;
+}
 
 .navbar {
   display: $df;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
   padding: 20px;
-  background-color: $pink;
-  height: 25vh;
 }
 
 .navbar__links a {
@@ -67,13 +69,15 @@ $mobile: 769px;
 .menu li a {
   text-decoration: none;
   background: linear-gradient($fuchsia 0 0) 0 100% / var(--t, 0) 2px no-repeat;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .menu li a:hover {
   color: $fuchsia;
   --t: 100%;
 }
+
+// стили для Бургер-меню начало
 
 #checkbox_toggle {
   display: none;
@@ -111,10 +115,13 @@ $mobile: 769px;
 .hamburger-line::after {
   top: -7px;
 }
+// стили для Бургер-меню конец
+/*Стили для header конец*/
 
+// Адаптив для-бургер меню
 @media (max-width: 768px) {
   .navbar__img {
-    width: 35vw;
+    width: 40vw;
   }
 
   .menu {
@@ -126,7 +133,7 @@ $mobile: 769px;
     text-align: center;
     right: 0;
     left: 0;
-    margin-top: 20px;
+    margin-top: 60px;
   }
 
   .menu li a {
@@ -168,3 +175,16 @@ $mobile: 769px;
     top: 0;
   }
 }
+
+@media (max-width: 1024px) {
+  .navbar__img {
+    width: 28vw;
+  }
+}
+
+@media (max-width: 430px) {
+  .navbar__img {
+    width: 40vw;
+  }
+}
+// Адаптив для бургер меню конц
